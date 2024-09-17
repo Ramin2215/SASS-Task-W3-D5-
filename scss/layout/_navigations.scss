@@ -1,0 +1,17 @@
+nav{
+.header-top__icons{
+    img{
+        
+        &:nth-child(1){
+            height: 23px;
+        }
+        &:nth-child(2){
+            height: 20px;
+        }
+    }
+}
+    ul{
+        @include flex-gap;
+        list-style: none;
+    }
+}

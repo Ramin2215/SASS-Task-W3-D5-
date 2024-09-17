@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+@media (max-width: 1400px) {
+    header {
+        background-size: 1800px !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    header {
+        height: fit-content !important;
+        flex-direction: column;
+        padding: 20px 0px;
+    }
+    header .header-top {
+        position: static !important;
+    }
+    header .header-center {
+        flex-wrap: wrap;
+        justify-content: center !important;
+        gap: 30px;
+    }
+    header .header-center .header-center__left {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+.section-two__imgbox{
+    img{
+        width: 100%;
+    }
+}
+    #section-one .section-one__contabox {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    #section-four .section-four__conta {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    #section-three .section-three__contabox {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    section {
+        height: fit-content !important;
+        padding: 20px 0px !important;
+        justify-content: center !important;
+    }
+    footer .footer__top {
+        padding: 50px 20px;
+        flex-wrap: wrap;
+       gap: 30px;
+    }
+}
+
+
+@media (max-width: 701px) {
+    header{
+        height: fit-content !important;
+        background-size: cover !important;
+    }
+    header .header-top{
+        background-color: white;
+        flex-direction: column;
+        height: fit-content !important;
+        position: relative !important;
+        bottom: 20px !important;
+        top: auto !important;
+    }
+    header .header-top .header-top__right .header-top__burger{
+        margin-left: 0px !important;
+    }
+    header .header-top .header-top__right{
+        height: fit-content !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+    header .header-top .header-top__right nav{
+        flex-direction: column !important;
+    }
+    nav ul {
+        flex-direction: column !important;
+    }
+    header .header-center .header-center__left h1 {
+        font-size: 25px !important;
+        color: #252B42;
+    }
+    header .header-center .header-center__left,header .header-center .header-center__left p{
+        width: 90vw !important;
+    }
+
+    #section-five {
+        background-size: cover !important;
+        display: flex;
+        justify-content: center;
+        padding: 10px !important;
+    }
+    #section-five form {
+        margin-left: 0px !important;
+    }
+}

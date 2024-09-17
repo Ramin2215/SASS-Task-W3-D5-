@@ -1,0 +1,227 @@
+#section-one {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+    h2,
+    p {
+        width: 40vw;
+        text-align: center;
+    }
+    .section-one__contabox {
+        @include flex-between;
+        gap: 30px;
+        .section-one__box {
+            background-color: $box-color;
+            padding: 10px 0px 2px 0px;
+
+            width: 270px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            border-radius: 10px;
+            .section-one__box__head {
+            }
+
+            .section-one__box__bottom {
+                background-color: white;
+                width: 265px;
+                border-radius: 10px;
+                padding: 20px;
+                @include flexColumn;
+                justify-content: space-between;
+                gap: 10px;
+                ul {
+                    list-style: none;
+                    @include flexColumn;
+                    gap: 10px;
+                }
+                span {
+                    color: $button-color-yellow;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+#section-two {
+    h2,
+    p {
+        width: 40vw;
+        text-align: center;
+    }
+    @include flexColumn;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    height: 100vh;
+    .section-two__green {
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        background-color: rgb(2, 63, 55);
+        bottom: 0;
+        z-index: -1;
+    }
+}
+
+#section-three {
+    background-color: rgb(216, 216, 216);
+    h2,
+    p {
+        width: 40vw;
+        text-align: center;
+    }
+    @include flexColumn;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    height: 70vh;
+
+    .section-three__contabox {
+        @include flex-gap;
+        .section-three__box {
+          
+            p{
+                width: fit-content;
+                text-align: start;
+                color: #737373;
+                line-height: 24px;
+            }
+            padding: 20px;
+            img {
+                width: 90px;
+            }
+            background-color: white;
+            width: 300px;
+            @include flexColumn;
+            gap: 10px;
+            .section-three__minibot{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                div{
+                    width: 120px;
+                    line-height: 25px;
+                }
+                img{
+                    width: 50px;
+                }
+            }
+        }
+    }
+}
+
+
+#section-four{
+    h2,
+    p {
+        width: 40vw;
+        text-align: center;
+    }
+    @include flexColumn;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    height: 100vh;
+
+    .section-four__conta{
+        @include flex-between;
+
+        gap: 30px;
+    }
+}
+
+
+#section-five{
+    background-image: url(../../assets/background\ \(1\).png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    form{
+        margin-left: 100px;
+        @include flexColumn;
+        background-color: transparent;
+        gap: 30px;
+        div{
+            @include flex-between;
+            gap: 20px;
+            select,input{
+                width: 100%;
+                padding: 15px;
+                border-radius: 10px;
+                border: 1px solid gray;;
+            }
+        }
+        textarea{
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        button{
+            background-color: $button-color-yellow;
+            color: white;
+            border-radius: 10px;
+            padding: 15px;
+            border: none;
+        }
+    }
+}
+
+
+footer{
+
+    
+    .footer__top{
+        background-color: rgb(26, 28, 66);
+        color: white;
+        padding: 60px 100px;
+        @include flex-between;
+        
+        div{
+            @include flexColumn;
+            h3{
+                margin-bottom: 20px;
+                font-size: 24px;
+            }
+            gap: 10px;
+
+           
+        }
+        .inpBut{
+            display: flex; 
+            align-items: center;
+            flex-direction: row;
+           justify-content: center;
+           width: fit-content;
+          
+           button{
+            background-color: $button-color-yellow;
+            padding: 10px 5px;
+            color: white;
+            border-radius: 0px 5px 5px 0px;
+            border: none;
+            position: relative;
+            right: 10px;
+           }
+           input{
+            padding: 10px 5px;
+            color: white;
+            border-radius: 5px 0px 0px 5px;
+            border: none;
+           }
+          
+        }
+    }
+}

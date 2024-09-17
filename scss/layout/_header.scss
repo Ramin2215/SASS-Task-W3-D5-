@@ -1,0 +1,93 @@
+header {
+    background-image: url(../../assets/background.png);
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    @include flex;
+    .header-top {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        @include flex-between;
+        padding: 20px 30px;
+        .header-top__left {
+            font-size: 30px;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+        .header-top__right {
+            @include flex-gap;
+            height: 50px;
+            .header-top__burger {
+                margin-left: 100px;
+            }
+            nav {
+                @include flex-gap;
+            }
+        }
+    }
+
+    .header-center{
+        @include flex-between;
+        width: 80vw;
+        .header-center__left{
+            width: 450px;
+            @include flexColumn;
+            gap: 30px;
+            h1{
+                font-size: 55px;
+                color: $h1-color;
+            }
+            p{
+                color: $p-color;
+                width: 350px;
+            }
+            .header-center__buttons{
+                button{
+                    &:nth-child(2){
+                        background-color: transparent;
+                        color: $button-color-blue;
+                        border-radius: 20px;
+                        border: 2px solid $button-color-blue;
+                        padding: 8px 30px;
+    
+                    }
+                    &:nth-child(1){
+                        background-color:$button-color-blue ;
+                        color: white;
+                        border-radius: 20px;
+                        border: none;
+                        padding: 10px 30px;
+                        
+                    }
+                }
+                
+               
+            }
+        }
+        .header-center__right{
+            width: 290px;
+            form{
+                @include flexColumn;
+                background-color:white;
+                padding: 20px;
+                gap: 20px;
+                border-radius: 10px;
+                input, select{
+                    height: 30px;
+                    padding: 5px;
+                    border: 1px solid gray!important;
+                    border-radius: 2px;
+                }
+                button{
+                    background-color: $button-color-yellow;
+                    border: none;
+                    color: white;
+                    padding: 10px;
+                    border-radius: 2px;
+                }
+            }
+           
+        }
+    }
+}
