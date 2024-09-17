@@ -7,7 +7,7 @@
 
 
 header {
-  background-image: url(../../assets/background.png);
+  background-image: url(../assets/background.png);
   height: 100vh;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -250,7 +250,7 @@ header .header-center .header-center__right form button {
 }
 
 #section-five {
-  background-image: url(../../assets/background\ \(1\).png);
+  background-image: url(../assets/background\ \(1\).png);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: 100%;
